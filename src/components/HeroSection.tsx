@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+himport { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Mail, Briefcase } from "lucide-react";
-import heroImage from "@/assets/profile-hero.jpg";
+import heroImage from "@/assets/dinesh.png";
 
 export function HeroSection() {
   const [displayedText, setDisplayedText] = useState("");
