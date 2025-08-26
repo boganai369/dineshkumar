@@ -54,11 +54,11 @@ export function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animate-delay-300">
               <Button 
-                onClick={() => scrollToSection("work")}
+                onClick={() => scrollToSection("achievements")}
                 className="btn-hero group"
               >
                 <Briefcase className="w-5 h-5 mr-2 group-hover:animate-bounce" />
-                View My Work
+                Key Achievements
               </Button>
               <Button 
                 onClick={() => scrollToSection("contact")}
