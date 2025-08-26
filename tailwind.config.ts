@@ -52,6 +52,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'royal-dark': {
+					DEFAULT: 'hsl(var(--royal-dark))',
+					muted: 'hsl(var(--royal-dark-muted))',
+					accent: 'hsl(var(--royal-dark-accent))'
+				},
+				'gold': {
+					DEFAULT: 'hsl(var(--gold-primary))',
+					accent: 'hsl(var(--gold-accent))',
+					muted: 'hsl(var(--gold-muted))',
+					glow: 'hsl(var(--gold-glow))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +95,48 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'typing': {
+					'0%': { width: '0' },
+					'100%': { width: '100%' }
+				},
+				'blink-caret': {
+					'0%, 100%': { 'border-color': 'transparent' },
+					'50%': { 'border-color': 'hsl(var(--primary))' }
+				},
+				'fade-in-up': {
+					'0%': { 
+						opacity: '0', 
+						transform: 'translateY(30px)' 
+					},
+					'100%': { 
+						opacity: '1', 
+						transform: 'translateY(0)' 
+					}
+				},
+				'scale-in': {
+					'0%': { 
+						opacity: '0', 
+						transform: 'scale(0.95)' 
+					},
+					'100%': { 
+						opacity: '1', 
+						transform: 'scale(1)' 
+					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'typing': 'typing 3s steps(50, end)',
+				'blink-caret': 'blink-caret 0.75s step-end infinite',
+				'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+				'scale-in': 'scale-in 0.5s ease-out forwards',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},

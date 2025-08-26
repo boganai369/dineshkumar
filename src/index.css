@@ -2,41 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Royal-Dark + Gold Premium Portfolio Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Royal Dark + Gold Theme */
+    --background: 0 0% 97%;
+    --foreground: 210 11% 15%;
+    
+    --royal-dark: 210 15% 5%;
+    --royal-dark-muted: 210 12% 8%;
+    --royal-dark-accent: 210 10% 12%;
+    
+    --gold-primary: 51 100% 50%;
+    --gold-accent: 43 74% 49%;
+    --gold-muted: 45 93% 85%;
+    --gold-glow: 51 100% 70%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 210 11% 15%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
+    --popover-foreground: 210 11% 15%;
+    
+    --primary: 51 100% 50%;
+    --primary-foreground: 210 15% 5%;
+    
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 210 11% 15%;
+    
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --accent: 51 100% 50%;
+    --accent-foreground: 210 15% 5%;
+    
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 51 100% 50%;
+    
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +64,34 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Dark Mode - Royal Dark Theme */
+    --background: 210 15% 5%;
+    --foreground: 0 0% 97%;
+    
+    --card: 210 12% 8%;
+    --card-foreground: 0 0% 97%;
+    
+    --popover: 210 12% 8%;
+    --popover-foreground: 0 0% 97%;
+    
+    --primary: 51 100% 50%;
+    --primary-foreground: 210 15% 5%;
+    
+    --secondary: 210 10% 12%;
+    --secondary-foreground: 0 0% 97%;
+    
+    --muted: 210 10% 12%;
+    --muted-foreground: 215 16% 65%;
+    
+    --accent: 51 100% 50%;
+    --accent-foreground: 210 15% 5%;
+    
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 97%;
+    
+    --border: 210 10% 15%;
+    --input: 210 10% 15%;
+    --ring: 51 100% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +109,110 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}
+
+@layer components {
+  /* Premium Gradients */
+  .gradient-gold {
+    background: linear-gradient(135deg, hsl(var(--gold-primary)), hsl(var(--gold-accent)));
+  }
+  
+  .gradient-royal {
+    background: linear-gradient(135deg, hsl(var(--royal-dark)), hsl(var(--royal-dark-accent)));
+  }
+  
+  .gradient-hero {
+    background: linear-gradient(135deg, 
+      hsl(var(--royal-dark)) 0%, 
+      hsl(var(--royal-dark-muted)) 50%, 
+      hsl(var(--royal-dark-accent)) 100%);
+  }
+  
+  /* Gold Glow Effects */
+  .gold-glow {
+    box-shadow: 0 0 30px hsl(var(--gold-primary) / 0.3);
+  }
+  
+  .text-gold-glow {
+    text-shadow: 0 0 10px hsl(var(--gold-primary) / 0.5);
+  }
+  
+  /* Premium Button Variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold py-4 px-8 rounded-full 
+           transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25;
+  }
+  
+  .btn-outline-gold {
+    @apply border-2 border-primary text-primary bg-transparent font-semibold py-3 px-6 rounded-full 
+           transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-105;
+  }
+  
+  /* Card Variants */
+  .card-premium {
+    @apply bg-card/90 backdrop-blur-sm border border-border/50 rounded-xl p-6 
+           transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/30;
+  }
+  
+  .card-expandable {
+    @apply bg-card border border-border rounded-xl overflow-hidden 
+           transform transition-all duration-300 hover:shadow-lg;
+  }
+  
+  /* Typing Animation */
+  .typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(50, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: hsl(var(--primary)); }
+  }
+  
+  /* Fade In Animations */
+  .animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Stagger Animation Delays */
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+  
+  /* Gold Badge/Pill */
+  .pill-badge {
+    @apply inline-block bg-primary/10 text-primary border border-primary/20 
+           px-4 py-2 rounded-full text-sm font-medium 
+           transform transition-all duration-300 hover:scale-105 hover:bg-primary/20;
+  }
+  
+  /* Section Spacing */
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Container Max Width */
+  .container-custom {
+    @apply max-w-6xl mx-auto;
   }
 }
