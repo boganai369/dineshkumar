@@ -18,11 +18,11 @@ export default function Portfolio() {
       <main>
         <HeroSection />
         <AboutSection />
+        <AchievementsSection />
         <WorkExperienceSection />
         <EducationSection />
         <FunnelSection />
         <SkillsSection />
-        <AchievementsSection />
         <CompaniesSection />
         <ContactSection />
       </main>
