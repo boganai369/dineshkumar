@@ -138,10 +138,10 @@ export function Footer() {
         <div className="border-t border-border/20">
           <div className="container-custom py-6">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
-              <p className="text-muted-foreground text-sm mb-4 md:mb-0">
+              <p className="text-muted-foreground text-base mb-4 md:mb-0">
                 © {new Date().getFullYear()} Dinesh Kumar Palani. All rights reserved.
               </p>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground text-base">
                 Built with 💛 using React & Modern Web Technologies
               </p>
             </div>

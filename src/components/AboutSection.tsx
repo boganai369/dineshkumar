@@ -9,7 +9,7 @@ export function AboutSection() {
           </div>
 
           <div className="card-premium animate-fade-in-up">
-            <div className="text-lg leading-relaxed text-muted-foreground space-y-6">
+            <div className="text-xl leading-relaxed text-muted-foreground space-y-6">
               <p>
                 Leading Marketing Operations at <span className="text-primary font-semibold">Zoho.com</span> (2020–present) with nearly 6 years of experience driving growth through org-wide marketing operations and regional communications aligned with compliance and automation.
               </p>

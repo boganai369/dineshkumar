@@ -53,7 +53,7 @@ export function SkillsSection() {
                     </h3>
                     
                     <div className="space-y-2">
-                      <div className="flex justify-between items-center text-sm">
+                      <div className="flex justify-between items-center text-base">
                         <span className="text-muted-foreground">Proficiency</span>
                         <span className="text-primary font-semibold">{skill.level}%</span>
                       </div>

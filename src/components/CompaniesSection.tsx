@@ -50,7 +50,7 @@ export function CompaniesSection() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-6">Companies Founded</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Entrepreneurial ventures across diverse industries, showcasing versatility and business acumen
           </p>
         </div>
@@ -80,12 +80,12 @@ export function CompaniesSection() {
                       </div>
                     </div>
                     
-                    <p className="text-muted-foreground mb-3 leading-relaxed">
+                    <p className="text-lg text-muted-foreground mb-3 leading-relaxed">
                       {company.description}
                     </p>
                     
                     {(company.metric || company.timeframe) && (
-                      <div className="flex items-center space-x-4 text-sm mb-3">
+                      <div className="flex items-center space-x-4 text-base mb-3">
                         {company.metric && (
                           <div className="flex items-center space-x-1">
                             <DollarSign className="w-4 h-4 text-primary" />
@@ -124,11 +124,11 @@ export function CompaniesSection() {
           <div className="card-premium">
             <h4 className="font-semibold text-foreground mb-4">Additional Business Links</h4>
             <div className="flex flex-wrap justify-center gap-4">
-              <a 
+                <a 
                 href="https://www.linkedin.com/in/zerabiz-ecom-llp-883966348/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 text-primary hover:text-accent transition-colors text-sm"
+                className="inline-flex items-center space-x-2 text-primary hover:text-accent transition-colors text-base"
               >
                 <span>Zerabiz E-com LLP</span>
                 <ExternalLink className="w-3 h-3" />

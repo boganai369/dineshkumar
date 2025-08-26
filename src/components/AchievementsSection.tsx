@@ -58,7 +58,7 @@ export function AchievementsSection() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-6">Key Achievements</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Measurable impact across revenue generation, cost optimization, and operational excellence
           </p>
         </div>
@@ -80,7 +80,7 @@ export function AchievementsSection() {
                     
                     <div className="mb-2">
                       <div className="text-3xl font-bold text-primary mb-1">{achievement.metric}</div>
-                      <div className="text-sm text-muted-foreground">{achievement.timeframe}</div>
+                      <div className="text-base text-muted-foreground">{achievement.timeframe}</div>
                     </div>
                   </div>
                   
@@ -88,7 +88,7 @@ export function AchievementsSection() {
                     {achievement.title}
                   </h3>
                   
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     {achievement.description}
                   </p>
                 </div>

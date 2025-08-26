@@ -42,15 +42,15 @@ export function WorkExperienceSection() {
                 </div>
                 
                 <div className="text-muted-foreground space-y-4">
-                  <p className="text-lg">
+                  <p className="text-xl">
                     Leading comprehensive marketing operations across Zoho's extensive product ecosystem, 
                     driving growth through strategic automation and cross-functional collaboration.
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-4 mt-6">
                     <div className="bg-muted/30 p-4 rounded-lg">
-                      <h4 className="font-semibold text-foreground mb-2">Key Responsibilities</h4>
-                      <ul className="text-sm space-y-1">
+                      <h4 className="font-semibold text-foreground mb-2 text-lg">Key Responsibilities</h4>
+                      <ul className="text-base space-y-1">
                         <li>• Org-wide marketing operations</li>
                         <li>• Regional communications</li>
                         <li>• Compliance & automation</li>
@@ -59,8 +59,8 @@ export function WorkExperienceSection() {
                     </div>
                     
                     <div className="bg-muted/30 p-4 rounded-lg">
-                      <h4 className="font-semibold text-foreground mb-2">Impact Areas</h4>
-                      <ul className="text-sm space-y-1">
+                      <h4 className="font-semibold text-foreground mb-2 text-lg">Impact Areas</h4>
+                      <ul className="text-base space-y-1">
                         <li>• Revenue scaling (MRR & ARR)</li>
                         <li>• 80+ product teams</li>
                         <li>• SMB to Enterprise customers</li>

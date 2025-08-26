@@ -118,7 +118,7 @@ export function ContactSection() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-6">Get In Touch</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to drive growth through innovative marketing operations? Let's connect and explore opportunities.
           </p>
         </div>
@@ -141,7 +141,7 @@ export function ContactSection() {
                         <IconComponent className="w-6 h-6 text-primary" />
                       </div>
                       <div className="flex-1">
-                        <p className="text-sm text-muted-foreground">{info.label}</p>
+                        <p className="text-base text-muted-foreground">{info.label}</p>
                         {info.href ? (
                           <a 
                             href={info.href}
@@ -164,7 +164,7 @@ export function ContactSection() {
             {/* Quick Stats */}
             <div className="card-premium">
               <h4 className="font-bold text-foreground mb-4">Why Work With Me?</h4>
-              <div className="space-y-3 text-sm">
+              <div className="space-y-3 text-base">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="w-4 h-4 text-primary" />
                   <span>6+ years marketing operations expertise</span>
@@ -202,7 +202,7 @@ export function ContactSection() {
                   }`}
                 />
                 {errors.name && (
-                  <div className="flex items-center space-x-1 mt-1 text-destructive text-sm">
+                  <div className="flex items-center space-x-1 mt-1 text-destructive text-base">
                     <AlertCircle className="w-3 h-3" />
                     <span>{errors.name}</span>
                   </div>
@@ -222,7 +222,7 @@ export function ContactSection() {
                   }`}
                 />
                 {errors.email && (
-                  <div className="flex items-center space-x-1 mt-1 text-destructive text-sm">
+                  <div className="flex items-center space-x-1 mt-1 text-destructive text-base">
                     <AlertCircle className="w-3 h-3" />
                     <span>{errors.email}</span>
                   </div>
@@ -242,7 +242,7 @@ export function ContactSection() {
                   }`}
                 />
                 {errors.message && (
-                  <div className="flex items-center space-x-1 mt-1 text-destructive text-sm">
+                  <div className="flex items-center space-x-1 mt-1 text-destructive text-base">
                     <AlertCircle className="w-3 h-3" />
                     <span>{errors.message}</span>
                   </div>

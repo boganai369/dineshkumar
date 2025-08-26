@@ -80,7 +80,7 @@ export function FunnelSection() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-6">Marketing Funnel Expertise</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Comprehensive case study approach covering every stage of the customer journey
           </p>
         </div>
@@ -108,7 +108,7 @@ export function FunnelSection() {
                     </div>
                     
                     <div className="flex items-center space-x-2">
-                      <span className="text-sm text-muted-foreground">
+                      <span className="text-base text-muted-foreground">
                         {stage.responsibilities.length} responsibilities
                       </span>
                       {isExpanded ? (
@@ -125,7 +125,7 @@ export function FunnelSection() {
                         {stage.responsibilities.map((responsibility, idx) => (
                           <div 
                             key={idx}
-                            className="bg-muted/50 px-3 py-2 rounded-lg text-sm font-medium text-foreground hover:bg-primary/10 transition-colors"
+                            className="bg-muted/50 px-3 py-2 rounded-lg text-base font-medium text-foreground hover:bg-primary/10 transition-colors"
                           >
                             {responsibility}
                           </div>
