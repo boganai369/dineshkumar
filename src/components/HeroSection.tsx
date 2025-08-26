@@ -1,11 +1,11 @@
 himport { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Mail, Briefcase } from "lucide-react";
-import heroImage from "@/assets/dinesh.png";
+import heroImage from "@/assets/Dinesh.png";
 
 export function HeroSection() {
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = "Marketing Operations Leader | Driving Growth Through Automation";
+  const fullText = "Marketing Operations Lead | Driving Growth Through Automation";
 
   useEffect(() => {
     let currentIndex = 0;
