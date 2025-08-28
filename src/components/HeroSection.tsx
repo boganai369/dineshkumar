@@ -1,4 +1,4 @@
-himport { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Mail, Briefcase } from "lucide-react";
 import heroImage from "@/assets/Dinesh.png";
