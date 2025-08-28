@@ -20,11 +20,12 @@ export default function Portfolio() {
         <AboutSection />
         <AchievementsSection />
         <WorkExperienceSection />
+         <CompaniesSection />
          <ContactSection />
         <EducationSection />
         <FunnelSection />
         <SkillsSection />
-        <CompaniesSection />
+        
         
       </main>
       
