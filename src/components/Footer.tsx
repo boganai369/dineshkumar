@@ -24,17 +24,8 @@ export function Footer() {
       icon: Linkedin,
       href: "https://www.linkedin.com/in/dineshkumarpalani/",
       label: "LinkedIn"
-    },
-    {
-      icon: Facebook,
-      href: "https://www.facebook.com/basebayofficial/",
-      label: "Facebook"
-    },
-    {
-      icon: Instagram,
-      href: "https://www.instagram.com/r15v4official_/",
-      label: "Instagram"
     }
+    
   ];
 
   return (
