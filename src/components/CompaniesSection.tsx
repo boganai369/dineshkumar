@@ -59,7 +59,7 @@ export function CompaniesSection() {
           {companies.map((company, index) => (
             <div 
               key={index}
-              className={`card-premium group animate-fade-in-up animate-delay-${(index + 1) * 100}`}
+              className={`card-premium group animate-fade-in-up animate-delay-{(index + 1) * 100}`}
             >
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="flex items-start space-x-4 flex-1">
