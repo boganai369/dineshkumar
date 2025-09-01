@@ -85,7 +85,7 @@ export function HeroSection() {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end animate-fade-in-up animate-delay-200">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 gold-glow">
+              <div className="w-100 h-100 rounded-full overflow-hidden border-4 border-primary/20 gold-glow">
                 <img 
                   src={heroImage} 
                   alt="Dinesh Kumar Palani - Marketing Operations Leader" 
