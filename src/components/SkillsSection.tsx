@@ -13,14 +13,14 @@ import {
 export function SkillsSection() {
   const skills = [
     { name: "Digital Marketing", icon: Globe, level: 95 },
-    { name: "Lead Generation", icon: Users, level: 92 },
-    { name: "Search Engine Marketing (SEM)", icon: Search, level: 88 },
-    { name: "Search Engine Optimization (SEO)", icon: TrendingUp, level: 85 },
-    { name: "Social Media Marketing", icon: Megaphone, level: 90 },
-    { name: "Email & Content Marketing", icon: Mail, level: 93 },
+    { name: "Lead Generation", icon: Users, level: 98 },
+    { name: "Search Engine Marketing (SEM)", icon: Search, level: 94 },
+    { name: "Search Engine Optimization (SEO)", icon: TrendingUp, level: 92 },
+    { name: "Social Media Marketing", icon: Megaphone, level: 99 },
+    { name: "Email & Content Marketing", icon: Mail, level: 99 },
     { name: "Demand & Growth Marketing", icon: Target, level: 94 },
-    { name: "Marketing Strategy", icon: FileText, level: 96 },
-    { name: "Tapping New Markets", icon: MapPin, level: 87 }
+    { name: "Marketing Strategy", icon: FileText, level: 99 },
+    { name: "Tapping New Markets", icon: MapPin, level: 93 }
   ];
 
   return (
