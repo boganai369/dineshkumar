@@ -88,7 +88,6 @@ export function CompaniesSection() {
                       <div className="flex items-center space-x-4 text-base mb-3">
                         {company.metric && (
                           <div className="flex items-center space-x-1">
-                            <DollarSign className="w-4 h-4 text-primary" />
                             <span className="text-primary font-semibold">{company.metric}</span>
                           </div>
                         )}
